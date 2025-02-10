@@ -1,0 +1,674 @@
+﻿@using Impactly_PDF_Generator.Models.Enums
+@using Impactly_PDF_Generator.Services
+@model SROIPDFGeneratorService
+@inject Impactly_PDF_Generator.Utilities.INumberUtility NumberUtility
+@inject Impactly_PDF_Generator.Utilities.IStringUtility StringUtility
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+<body>
+    @if (Model._SROIRequestModel.SROIPage11 is not null)
+    {
+        var rows = Model._SROIRequestModel.SROIPage11.AdditionalCommentsRecords;
+        var yOffset = 53.491356;
+        <?xml version="1.0" encoding="UTF-8" standalone="no"?>
+       <svg
+       fill="none"
+       viewBox="0 0 850 846"
+       version="1.1"
+       id="svg231"
+       sodipodi:docname="SROI#11.svg"
+       inkscape:version="1.2.2 (732a01da63, 2022-12-09)"
+       inkscape:export-filename="devina-SVG-1716281288.svg"
+       inkscape:export-xdpi="96"
+       inkscape:export-ydpi="96"
+       xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+       xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+       xmlns="http://www.w3.org/2000/svg"
+       xmlns:svg="http://www.w3.org/2000/svg">
+      <defs
+         id="defs235">
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4661" />
+        <rect
+           x="27"
+           y="168.5"
+           width="169.25"
+           height="23.25"
+           id="rect4629" />
+        <rect
+           x="27.375"
+           y="148.4375"
+           width="168.375"
+           height="9.5"
+           id="rect4604" />
+        <rect
+           x="25.989407"
+           y="76.175848"
+           width="795.6142"
+           height="24.197034"
+           id="rect1067" />
+        <path
+           id="b-1"
+           d="m 24.3,79.1 h 530.4 v 14 H 24.3 Z" />
+        <path
+           id="d-0"
+           d="M 24.3,79.1 H 73.1 V 94.4 H 24.3 Z" />
+        <path
+           id="path2548"
+           d="m 24.3,79.1 h 530.4 v 14 H 24.3 Z" />
+        <path
+           id="path3481"
+           d="m 24.3,79.1 h 530.4 v 14 H 24.3 Z" />
+        <path
+           id="j-5"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="e-2"
+           d="M 24.3,79.1 H 99.7 V 93.3 H 24.3 Z" />
+        <path
+           id="k"
+           d="M 24.3,79.1 H 34.7 V 94.5 H 24.3 Z" />
+        <path
+           id="g-2"
+           d="m 24.3,79.1 h 64 v 13.5 h -64 z" />
+        <path
+           id="h-3"
+           d="M 24.3,79.1 H 37.5 V 92.6 H 24.3 Z" />
+        <path
+           id="path3990"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path3990-0"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4046"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4055"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4060"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4065"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4065-6"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4060-8"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4055-0"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path4046-2"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="j-5-9"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path3990-0-9"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <path
+           id="path3990-2"
+           d="m 24.3,79.1 h 57 v 14.5 h -57 z" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4661-7" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4661-4" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4661-4-1" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4952" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="239.06712"
+           height="35.49532"
+           id="rect4952-1" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4952-1-0" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect541" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="239.06712"
+           height="35.495319"
+           id="rect4952-1-1" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4952-4" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4661-4-1-7" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4661-4-3" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect4661-7-4" />
+        <mask
+           id="b-6"
+           fill="#ffffff">
+          <path
+             d="m 24,103 h 794 v 20 H 24 Z"
+             id="path146-9" />
+        </mask>
+        <mask
+           id="c-9"
+           fill="#ffffff">
+          <path
+             d="m 24,123 h 794 v 20 H 24 Z"
+             id="path153-4" />
+        </mask>
+        <rect
+           x="28.25"
+           y="168.5"
+           width="239.06712"
+           height="35.495319"
+           id="rect2232" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect2234" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect2236" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect2238" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="206.92551"
+           height="18.123476"
+           id="rect2240" />
+        <rect
+           x="477.75"
+           y="264.5"
+           width="90.228553"
+           height="9.9929452"
+           id="rect1445-0-4" />
+        <rect
+           x="477.75"
+           y="264.5"
+           width="124.72855"
+           height="10.992945"
+           id="rect1054" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="239.06712"
+           height="35.495319"
+           id="rect4952-1-3" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="239.06712"
+           height="35.495319"
+           id="rect4952-1-1-1" />
+        <rect
+           x="28.25"
+           y="168.5"
+           width="239.06712"
+           height="35.495319"
+           id="rect2232-0" />
+      </defs>
+      <sodipodi:namedview
+         id="namedview233"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         showgrid="false"
+         inkscape:zoom="2.0000001"
+         inkscape:cx="328.49999"
+         inkscape:cy="86.749998"
+         inkscape:window-width="1718"
+         inkscape:window-height="1360"
+         inkscape:window-x="1913"
+         inkscape:window-y="0"
+         inkscape:window-maximized="0"
+         inkscape:current-layer="g229" />
+      <g
+         filter="url(#a)"
+         id="g229"
+         inkscape:label="SROI#11">
+        <path
+           fill="#ffffff"
+           d="M 0,0.1044215 H 850.06568 V 849.74723 H 0 Z"
+           id="path132"
+           style="stroke-width:1.20068"
+           inkscape:label="bg" />
+        <g
+           id="g829"
+           inkscape:label="header">
+          <path
+             d="M24 28a4 4 0 0 1 4-4h786a4 4 0 0 1 4 4v36H24z"
+             fill="#1C1632"
+             id="path134"
+             inkscape:label="bg" />
+          <path
+             d="m 369.55039,36.126728 c 0.4602,0 0.8333,0.3731 0.8333,0.83334 v 3.13083 l -1.6667,1.66667 v -3.96417 h -11.66663 v 13.33333 h 11.66663 v -2.2983 l 1.6667,-1.6667 v 4.7983 c 0,0.4603 -0.3731,0.8334 -0.8333,0.8334 h -13.33337 c -0.46023,0 -0.83333,-0.3731 -0.83333,-0.8334 v -14.99996 c 0,-0.46024 0.3731,-0.83334 0.83333,-0.83334 z m 1.4818,5.67301 1.1785,1.17849 -6.4818,6.4818 -1.1803,-0.0017 0.002,-1.1768 z m -7.3152,2.66033 v 1.66666 h -4.16663 v -1.66666 z m 2.5,-3.33334 v 1.66667 h -6.66663 v -1.66667 z"
+             fill="#ef5d43"
+             id="path1366"
+             inkscape:label="icon" />
+          <text
+             xml:space="preserve"
+             x="51.700001"
+             fill="#ffffff"
+             font-family="Inter"
+             font-size="10px"
+             font-weight="400"
+             letter-spacing="0"
+             style="font-weight:400;font-size:10px;line-height:1.5;font-family:Inter;-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;letter-spacing:0;word-spacing:0;white-space:pre;shape-inside:url(#n);display:inline;fill:#ffffff"
+             transform="translate(374.95339,49.929463)"
+             word-spacing="0"
+             id="text142"
+             inkscape:label="title"><tspan
+               x="0"
+               y="0"
+               id="tspan2651"><tspan
+                 style="font-size:16px;font-family:Lora;-inkscape-font-specification:'Lora';font-variation-settings:'wght' 600"
+                 id="tspan2649"> Additional comments</tspan></tspan></text>
+        </g>
+        <mask
+           id="b"
+           fill="#fff">
+          <path
+             d="M24 103h794v20H24z"
+             id="path146" />
+        </mask>
+        <mask
+           id="c"
+           fill="#fff">
+          <path
+             d="M24 123h794v20H24z"
+             id="path153" />
+        </mask>
+        <mask
+           id="d"
+           fill="#fff">
+          <path
+             d="M24 143h794v20H24z"
+             id="path162" />
+        </mask>
+        <mask
+           id="e"
+           fill="#fff">
+          <path
+             d="M24 163h794v20H24z"
+             id="path171" />
+        </mask>
+        <mask
+           id="f"
+           fill="#fff">
+          <path
+             d="M24 183h794v20H24z"
+             id="path180" />
+        </mask>
+        <mask
+           id="g"
+           fill="#fff">
+          <path
+             d="M24 203h794v20H24z"
+             id="path189" />
+        </mask>
+        <mask
+           id="h"
+           fill="#fff">
+          <path
+             d="M24 223h794v20H24z"
+             id="path198" />
+        </mask>
+        <mask
+           id="i"
+           fill="#fff">
+          <path
+             d="M24 243h794v20H24z"
+             id="path207" />
+        </mask>
+        <mask
+           id="j"
+           fill="#fff">
+          <path
+             d="M24 263h794v20H24z"
+             id="path216" />
+        </mask>
+        <g
+           id="g4087"
+           inkscape:label="content">
+          <g
+             id="g4100"
+             inkscape:label="table"
+             transform="translate(0,-18.999999)">
+
+             @foreach (var item in rows.Select((row, index) => new { row, index }))
+            {
+                var outcomeCommentsLines = StringUtility.SplitIntoLines( item.row.OutcomeComments, 65);
+                var sensitivityCommentsLines = StringUtility.SplitIntoLines( item.row.SensitivityComments, 65);
+                string fillColor = "#0a0812"; 
+                switch (item.row.ValueType)
+                {
+                    case "Social":
+                        fillColor = "#503E8E";
+                        break;
+                    case "Budgetary":
+                        fillColor = "#0A0812";
+                    break;
+                }
+
+                 <g
+                   id="g3647-9"
+                   transform="translate(-207.09521,@yOffset)"
+                   inkscape:label="tr-large"
+                   style="display:inline">
+
+                        @if (outcomeCommentsLines.Count() >= 3 || sensitivityCommentsLines.Count() >= 3)
+                        {
+                            <path
+                                d="M 231.09521,69.508644 H 1025.0952 V 116.80864 H 231.09521 Z"
+                                fill="@fillColor"
+                                fill-opacity="0.1"
+                                id="path156"
+                                inkscape:label="bg"
+                                style="display:inline;stroke-width:1.53785" />
+                        }else if (outcomeCommentsLines.Count() == 2 || sensitivityCommentsLines.Count() == 2)
+                        {
+                            <path
+                                d="M 231.09521,69.508644 H 1025.0952 V 106.20204 H 231.09521 Z"
+                                fill="@fillColor"
+                                fill-opacity="0.1"
+                                id="path156-7"
+                                inkscape:label="bg"
+                                style="display:inline;stroke-width:1.35449" /> 
+                        } else if (outcomeCommentsLines.Count() <= 1 || sensitivityCommentsLines.Count() <= 1)
+                        {
+                              <path
+                                 d="m 231.09521,69.508644 h 793.99999 v 25.493 H 231.09521 Z"
+                                 fill="@fillColor"
+                                 fill-opacity="0.1"
+                                 id="path2196"
+                                 inkscape:label="bg"
+                                 style="display:inline;stroke-width:1.129" />
+                        }
+
+                  <text
+                     xml:space="preserve"
+                     id="text4950-7"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:0;font-family:Inter;-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4952-1);display:inline;fill:#000000;stop-color:#000000"
+                     transform="translate(751.19455,-92.771237)"
+                     inkscape:label="r4"
+                     x="-163.51137"
+                     y="0">
+                     
+                    @if (sensitivityCommentsLines.Count() <= 1)
+                    {
+                        <tspan
+                            x="28.25"
+                            y="175.30376"
+                            id="tspan2691"><tspan
+                                style="line-height:1.1;text-align:start"
+                                id="tspan2689">@sensitivityCommentsLines[0]</tspan></tspan>
+
+                    }else if(sensitivityCommentsLines.Count() == 2){
+                            <tspan
+                            x="28.25"
+                            y="185.70376"
+                            id="tspan2695"><tspan
+                                style="line-height:1.1;text-align:start"
+                                id="tspan2693">@sensitivityCommentsLines[1]</tspan></tspan>
+                    }else if(sensitivityCommentsLines.Count() >= 3){
+                            <tspan
+                                x="28.25"
+                                y="197.70376"
+                                id="tspan2699"><tspan
+                                    style="line-height:1.5"
+                                    id="tspan2697">@sensitivityCommentsLines[2]</tspan></tspan>
+                    }
+                  
+                     </text>
+
+                  <text
+                     xml:space="preserve"
+                     id="text4950-7-2"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:0;font-family:Inter;-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4952-1-3);display:inline;fill:#000000;stop-color:#000000"
+                     transform="translate(491.48921,-92.771237)"
+                     inkscape:label="r3"
+                     x="-163.51137"
+                     y="0">
+
+                    @if (outcomeCommentsLines.Count() <= 1)
+                    {
+                        <tspan
+                       x="28.25"
+                       y="175.30376"
+                       id="tspan2703"><tspan
+                         style="line-height:1.1;text-align:start"
+                         id="tspan2701">@outcomeCommentsLines[0]</tspan></tspan>
+
+                    }else if(outcomeCommentsLines.Count() == 2){
+                            <tspan
+                       x="28.25"
+                       y="185.70376"
+                       id="tspan2707"><tspan
+                         style="line-height:1.1;text-align:start"
+                         id="tspan2705">@outcomeCommentsLines[1]</tspan></tspan>
+                    }else if(outcomeCommentsLines.Count() >= 3){
+                            <tspan
+                       x="28.25"
+                       y="197.70376"
+                       id="tspan2711"><tspan
+                         style="line-height:1.5"
+                         id="tspan2709">@outcomeCommentsLines[2]</tspan></tspan>
+                    }
+
+                     </text>
+
+
+                  <text
+                     xml:space="preserve"
+                     id="text4659-1-9"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:2.5;font-family:Inter;-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4661-4-1);display:inline;fill:#000000;stop-color:#000000"
+                     transform="translate(323.29071,-98.564419)"
+                     inkscape:label="r2"
+                     x="-155.87497"
+                     y="0"><tspan
+                       x="126.64471"
+                       y="180.90376"
+                       id="tspan2713">@item.row.Beneficiary</tspan></text>
+                  <text
+                     xml:space="preserve"
+                     id="text4659-8"
+                     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:2.5;font-family:Inter;-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-align:center;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect4661-7);display:inline;fill:#000000;stop-color:#000000"
+                     transform="translate(208.85456,-98.371237)"
+                     inkscape:label="r1"
+                     x="-155.87497"
+                     y="0"><tspan
+                       x="28.25"
+                       y="180.90376"
+                       id="tspan2717"><tspan
+                         style="text-align:justify"
+                         id="tspan2715">@item.row.OutcomeName</tspan></tspan></text>
+                  <g
+                     id="g4219"
+                     style="display:inline"
+                     inkscape:label="divider"
+                     transform="translate(207.09521,-53.491356)">
+                    <path
+                       d="M 818,122 H 24 v 2 h 794 z"
+                       fill="#0a0812"
+                       fill-opacity="0.1"
+                       mask="url(#b)"
+                       id="path149"
+                       inkscape:label="up" />
+                    <path
+                       d="M 818,142 H 24 v 2 h 794 z"
+                       fill="#0a0812"
+                       fill-opacity="0.1"
+                       mask="url(#c)"
+                       id="path158"
+                       inkscape:label="down"
+                       transform="translate(0,28.297794)" />
+                  </g>
+                </g>
+                 @if (item.index != 0)
+                        {
+                            var lines1 = StringUtility.SplitIntoLines( rows[item.index - 1].OutcomeComments, 65);
+                            var lines2 = StringUtility.SplitIntoLines( rows[item.index - 1].SensitivityComments, 65);
+
+                            if (lines1.Count() <= 1 || lines2.Count() <= 1)
+                            {
+                                yOffset += 26.52254;
+                            }else if(lines1.Count() == 2 || lines2.Count() == 2){
+                                yOffset += 37.6975;
+                            }else if(lines1.Count() >= 3 || lines2.Count() >= 3){
+                                yOffset += 48.288604;
+                            }
+                        }
+                        else
+                        {
+                            if (outcomeCommentsLines.Count() >= 3 || sensitivityCommentsLines.Count() >= 3)
+                            {
+                                 yOffset += 49.2964145;
+                            }else if (outcomeCommentsLines.Count() == 2 || sensitivityCommentsLines.Count() == 2)
+                            {
+                                  yOffset += 39.6975;
+                            } else if (outcomeCommentsLines.Count() <= 1 || sensitivityCommentsLines.Count() <= 1)
+                            {
+                                  yOffset += 28.51864;
+                            }
+
+                        }
+                    }
+
+
+
+            <g
+               id="g3647"
+               transform="translate(-2.2422517,-13.116655)"
+               inkscape:label="th"
+               style="display:inline">
+              <text
+                 xml:space="preserve"
+                 fill="#000000"
+                 fill-opacity="0.6"
+                 font-family="Inter"
+                 font-size="10px"
+                 font-weight="400"
+                 letter-spacing="0"
+                 opacity="0.9"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.5;font-family:Inter;-inkscape-font-specification:'Inter';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 700;text-decoration-color:#000000;letter-spacing:0;word-spacing:0;white-space:pre;shape-inside:url(#path3990-0);display:inline;opacity:0.9;fill:#000000;fill-opacity:0.6"
+                 transform="translate(220.54304,37.733763)"
+                 word-spacing="0"
+                 id="text3988-6"
+                 inkscape:label="beneficiary"><tspan
+                   x="24.300781"
+                   y="87.503365"
+                   id="tspan2719">Beneficiary</tspan></text>
+              <text
+                 xml:space="preserve"
+                 fill="#000000"
+                 fill-opacity="0.6"
+                 font-family="Inter"
+                 font-size="10px"
+                 font-weight="400"
+                 letter-spacing="0"
+                 opacity="0.9"
+                 style="line-height:1.5;-inkscape-font-specification:'Inter, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;text-decoration-color:#000000;white-space:pre;shape-inside:url(#path3990);display:inline"
+                 transform="translate(6.3,36.311801)"
+                 word-spacing="0"
+                 id="text3988"
+                 inkscape:label="outcome"><tspan
+                   x="24.300781"
+                   y="89.604304"
+                   id="tspan2723"><tspan
+                     style="font-weight:700;font-size:8px"
+                     id="tspan2721"> Outcome</tspan></tspan></text>
+              <text
+                 xml:space="preserve"
+                 transform="translate(-163.09102,-145.79617)"
+                 id="text1443-7-2"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.2;font-family:Inter;-inkscape-font-specification:'Inter';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 700;text-align:justify;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1445-0-4);display:inline;fill:#757575;fill-opacity:1;stop-color:#000000"
+                 inkscape:label="outcomedata"><tspan
+                   x="477.75"
+                   y="271.70376"
+                   id="tspan2725">Outcome data</tspan></text>
+              <text
+                 xml:space="preserve"
+                 transform="translate(96.678074,-146.51208)"
+                 id="text1052"
+                 style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:1.2;font-family:Inter;-inkscape-font-specification:'Inter';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;font-variation-settings:'wght' 700;text-align:justify;text-decoration-color:#000000;letter-spacing:0px;word-spacing:0px;white-space:pre;shape-inside:url(#rect1054);display:inline;fill:#757575;fill-opacity:1;stop-color:#000000"
+                 inkscape:label="sensitivityAnalysis"><tspan
+                   x="477.75"
+                   y="271.70376"
+                   id="tspan2727">Sensitivity analysis</tspan></text>
+            </g>
+          </g>
+        </g>
+      </g>
+    </svg>
+    }
+</body>

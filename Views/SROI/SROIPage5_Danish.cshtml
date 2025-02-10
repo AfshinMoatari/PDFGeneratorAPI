@@ -1,0 +1,60 @@
+﻿@using Impactly_PDF_Generator.Models.Enums
+@using Impactly_PDF_Generator.Services
+@model SROIPDFGeneratorService
+@inject Impactly_PDF_Generator.Utilities.INumberUtility NumberUtility
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            width: 100vw;
+            height: 100vh;
+            overflow: hidden;
+        }
+        svg {
+            width: 100%;
+            height: 100%;
+            max-width: 100vw;
+            max-height: 100vh;
+        }
+        .content-div {
+            color: #000;
+            font-size: 14px;
+        }
+        .content-div p {
+            margin: 8px 0;
+        }
+        .content-div ul, .content-div ol {
+            margin: 8px 0;
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    @if (Model._SROIRequestModel.SROIPage5 is not null)
+    {
+        var items = Model._SROIRequestModel.SROIPage5;
+
+        <svg fill="none" version="1.1" viewBox="0 0 595 842" 
+             preserveAspectRatio="xMidYMid meet"
+             xmlns="http://www.w3.org/2000/svg">
+            <g transform="translate(-.5942)">
+                <path d="m24 28c0-2.2091 1.7909-4 4-4h539c2.209 0 4 1.7909 4 4v36h-547z" fill="#1c1632"/>
+                <path d="m252.67 36.5v13.333h13.333v1.6667h-15v-15zm12.744 2.7441 1.178 1.1785-4.756 4.7559-2.5-2.4993-3.577 3.5767-1.179-1.1785 4.756-4.7559 2.5 2.4993z" fill="#ef5d43"/>
+                <text x="276.50927" y="50.226578" fill="#ffffff" font-family="Lora" font-size="16px" font-weight="600">Method</text>
+                
+                <foreignObject x="24" y="64" width="547" height="800">
+                    <div xmlns="http://www.w3.org/1999/xhtml" class="content-div" style="font-family: 'Lora', serif; padding: 20px;">
+                        @Html.Raw(items.Description)
+                    </div>
+                </foreignObject>
+            </g>
+        </svg>
+    }
+</body>
+</html>
